@@ -1,0 +1,312 @@
+/*
+THIS IS THE CSS FOR THE OVERALL PORTAL. 
+ALWAYS PUT THE STYLES ON THE SECTION WHERE IT BELONG
+IF THERE IS NO SECTION YET, PUT A COMMENT ON IT'S BEGINING AND END
+FOR ORGANIZATION PURPOSES.
+-IRENEO
+*/
+
+/* standard content height header(12vh) + body(88vh) */
+
+
+/* HEADER */
+.navbar {
+    height: 5em;
+    width: 100%;
+    background: #2f352c;
+}
+
+.navbar-brand {
+    width: 9em;
+    height: auto;
+    
+}
+
+.offcanvas{
+    background-color:#8bc866;
+}
+
+.offcanvas-header {
+    background: #2f352c;
+    color: white;
+}
+
+.offcanvas-body {
+    background: #8bc866;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+    .navbar-nav .nav-link:hover {
+    color: #f8f9fa;    
+}
+
+/* END OF HEADER */
+
+/* FOOTER */
+
+.footer {
+    background-color:#8bc866;
+    color: rgb(27, 27, 27);
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+} 
+
+/* END OF FOOTER */
+.container {
+    display: flex; 
+    flex-direction: column;
+}
+
+
+/* LOGIN PAGE (INDEX.PHP) */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8bc866;
+    padding: 10px;
+}
+
+.logo img {
+    height: 65px;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 900px;
+}
+.nav-links li {
+    margin-bottom: 10px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    margin: 2%;
+}
+
+.left-panel h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color:#8bc866;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+.right-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* END OF LOGIN PAGE DESIGN */
+
+
+/*ALERT*/
+.alert-success {
+    background-color: #42ba96;
+}
+
+.alert-danger {
+    background-color: #fc5555;
+}
+
+.alert-info {
+    background-color: #2E9AFE;
+}
+
+.alert-warning {
+    background-color: #ff9966;
+}
+/*ALERT*/
+
+
+
+/* ACCOUNT CREATION PAGE */
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ACCOUNT CREATION PAGE */
+
+/* ACCOUNT INFO PAGE */
+.main-content{
+    height: 88vh; 
+}
+
+/* END OF ACCOUNT INFO PAGE */
+
+/* HOME PAGE */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.welcomeApplicant {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcomeApplicant img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.welcomeDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appStatus {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.reqTab{
+    padding-top: 12vh;
+    margin: 20px
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.file-drop-area {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.file-drop-area.dragover {
+    background-color: #f8f9fa;
+}
+
+.file-list {
+    margin-top: 10px;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.requirement-row {
+    flex-direction: column;
+}
+
+.status-col, .requirement-col, .upload-col {
+    padding: 5px;
+}
+
+@media (min-width: 768px) {
+    .requirement-row {
+        flex-direction: row;
+    }
+    .file-drop-area {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 375px) {
+    .status-col, .requirement-col, .upload-col {
+        flex: 3;
+    }
+}
+
+/* END OF HOME PAGE */
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
